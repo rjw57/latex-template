@@ -1,5 +1,5 @@
 # Specify output PDF documents here.
-PDFS:=gpresentation.pdf example_paper.pdf
+PDFS:=example_presentation.pdf example_paper.pdf
 
 # Sources common to all documents:
 common_depends:=$(wildcard common/fig/*)
