@@ -12,9 +12,9 @@ EXTRA_PACKAGES:=common
 # Sources for each document:
 
 # Presentation has no references...
-gpresentation_TEX:=example_presentation/presentation.tex
-gpresentation_DEPENDS:=$(common_depends)
-gpresentation_VIDEOS:=\
+example_presentation_TEX:=example_presentation/presentation.tex
+example_presentation_DEPENDS:=$(common_depends)
+example_presentation_VIDEOS:=\
 	$(wildcard example_presentation/video/*) $(common_videos)
 
 # Paper does so we need to add an extra dependency...
