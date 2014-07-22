@@ -10,7 +10,7 @@ PDFLATEX ?= xelatex
 TEXLOCAL_DIR ?= texlocal
 
 LATEXMK_CMD:=$(LATEXMK) -bibtex -pdf \
-	-pdflatex="$(PDFLATEX) -interaction=nonstopmode -halt-on-error %O %S"
+	-pdflatex="$(PDFLATEX) -interaction=nonstopmode -file-line-error -halt-on-error %O %S"
 
 POSTER_DIR:=$(BUILD_DIR)/poster
 LOCAL_PACKAGES:=$(EXTRA_PACKAGES) $(wildcard $(TEXLOCAL_DIR)/*)
