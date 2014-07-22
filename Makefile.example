@@ -7,7 +7,7 @@ common_videos:=$(wildcard common/video/*)
 
 # Add the common directory to the common texinputs.
 # NOTE: this list is *space* separated
-EXTRA_PACKAGES:=common
+EXTRA_PACKAGES:=example_common
 
 # Sources for each document:
 
@@ -18,9 +18,9 @@ example_presentation_VIDEOS:=\
 	$(wildcard example_presentation/video/*) $(common_videos)
 
 # Paper does so we need to add an extra dependency...
-gpaper_TEX:=example_paper/paper.tex
-gpaper_DEPENDS:=$(wildcard example_paper/*.bib) $(common_depends)
-gpaper_VIDEOS:=$(wildcard example_paper/video/*) $(common_videos)
+example_paper_TEX:=example_paper/paper.tex
+example_paper_DEPENDS:=$(wildcard example_paper/*.bib) $(common_depends)
+example_paper_VIDEOS:=$(wildcard example_paper/video/*) $(common_videos)
 
 # The magic is in here.
 include scripts/latex.mk
