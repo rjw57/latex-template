@@ -1,3 +1,3 @@
 # LaTeX Project template
 
-This is my starting point for MAkefile-driven LaTeX projects.
+This is my starting point for Makefile-driven LaTeX projects.
