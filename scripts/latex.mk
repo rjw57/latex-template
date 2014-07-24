@@ -24,9 +24,8 @@ space := $(empty) $(empty)
 
 COMMON_TEXINPUTS:=$(subst $(space),:,$(COMMON_TEXINPUTS_LIST))
 
-.PHONY: all
-.DEFAULT: all
-all: $(addprefix $(OUTPUT_DIR)/, $(PDFS))
+.PHONY: pdfs
+pdfs: $(addprefix $(OUTPUT_DIR)/, $(PDFS))
 
 define PDF_template
 $(1:.pdf=)_PDF_OUTPUT := $(addprefix $(OUTPUT_DIR)/, $(1))
