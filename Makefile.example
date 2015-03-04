@@ -23,7 +23,7 @@ example_paper_DEPENDS:=$(wildcard example_paper/*.bib) $(common_depends)
 example_paper_VIDEOS:=$(wildcard example_paper/video/*) $(common_videos)
 
 .PHONY: all
-all: pdf
+all: pdfs
 
 # The magic is in here.
 include scripts/latex.mk
